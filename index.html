@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Movie Page</title>
+        <link
+            href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+            rel="stylesheet">
+        <link
+            href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+            rel="stylesheet" type="text/css">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.3/font/bootstrap-icons.min.css">
+        <link rel="stylesheet" href="style.css">
+
+    </head>
+    <body>
+
+        <div id="navbar" class>
+
+            <span id="logo"
+                class="font-bold text-orange-400 text-2xl mx-3 mt-2 inline-block ">Movies.com</span>
+
+            <div class="float-end me-5 mt-3 text-1xl">
+                <span class="ms-3">Home</span>
+                <span class="ms-3">Subscribe</span>
+                <span class="ms-3">Login</span>
+
+            </div>
+
+        </div>
+
+        <div class="grid grid-cols-4">
+
+            <div id="menubar" class>
+
+                <div class="bg-orange-600 m-3 p-12 pt-5 text-white rounded-lg">
+
+                    <h5 class="text-xl mb-2 font-bold">Categories</h5>
+                    <div class="ms-2">
+                        <div><input id="adventure"
+                                class="checkbox checkbox-xs me-2 bg-white "
+                                type="checkbox"><label class="text-gray-200"
+                                for="adventure">Adventure</label></div>
+
+                        <div><input id="Action"
+                                class="checkbox checkbox-xs me-2 bg-white "
+                                type="checkbox"><label class="text-gray-200"
+                                for="Action">Action</label></div>
+
+                        <div><input id="Animation"
+                                class="checkbox checkbox-xs me-2 bg-white "
+                                type="checkbox"><label class="text-gray-200"
+                                for="Animation">Animation</label></div>
+
+                        <div><input id="Comedy"
+                                class="checkbox checkbox-xs me-2 bg-white "
+                                type="checkbox"><label class="text-gray-200"
+                                for="Comedy">Comedy</label></div>
+
+                        <div><input id="Science Faction"
+                                class="checkbox checkbox-xs me-2 bg-white "
+                                type="checkbox"><label class="text-gray-200"
+                                for="Science Faction">Science
+                                Faction</label></div>
+
+                        <div><input id="Thriller"
+                                class="checkbox checkbox-xs me-2 bg-white "
+                                type="checkbox"><label class="text-gray-200"
+                                for="Thriller">Thriller</label></div>
+
+                        <div><input id="History"
+                                class="checkbox checkbox-xs me-2 bg-white "
+                                type="checkbox"><label class="text-gray-200"
+                                for="History">History</label></div>
+
+                        <div><input id="Documentary"
+                                class="checkbox checkbox-xs me-2 bg-white "
+                                type="checkbox"><label class="text-gray-200"
+                                for="Documentary">Documentary</label></div>
+
+                        <div><input id="Fantasy"
+                                class="checkbox checkbox-xs me-2 bg-white "
+                                type="checkbox"><label class="text-gray-200"
+                                for="Fantasy">Fantasy</label></div>
+
+                    </div>
+                    <h5 class="text-xl mb-2 font-bold">Language</h5>
+                    <div class="ms-2">
+                        <div><input id="English"
+                                class="checkbox checkbox-xs me-2 bg-white "
+                                type="checkbox"><label class="text-gray-200"
+                                for="English">English</label></div>
+
+                        <div><input id="Spanish"
+                                class="checkbox checkbox-xs me-2 bg-white "
+                                type="checkbox"><label class="text-gray-200"
+                                for="Spanish">Spanish</label></div>
+
+                        <div><input id="Hindi"
+                                class="checkbox checkbox-xs me-2 bg-white "
+                                type="checkbox"><label class="text-gray-200"
+                                for="Hindi">Hindi</label></div>
+
+                    </div>
+
+                    <h5 class="text-xl mb-2 font-bold">Time</h5>
+                    <div class="ms-2">
+                        <div><input id="Morning"
+                                class="checkbox checkbox-xs me-2 bg-white "
+                                type="checkbox"><label class="text-gray-200"
+                                for="Morning">Morning</label></div>
+
+                        <div><input id="Night"
+                                class="checkbox checkbox-xs me-2 bg-white "
+                                type="checkbox"><label class="text-gray-200"
+                                for="Spanish">Spanish</label></div>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <div  style="height: 89dvh;" id="content"
+                class="col-span-3  overflow-auto no-scrollbar">
+
+                <div class="grid-cols-1 m-3 ">
+
+                    <div id="upcomming-image" class=" rounded-lg h-72">
+
+                        <div>
+
+                            <button
+                                class="btn btn-outline bg-gray-900 mt-4 ms-4 btn-warning">Upcomming
+                                Movies</button>
+
+                        </div>
+                        <div class="mt-40">
+
+                            <button
+                                class="btn btn-sm btn-warning mt-4 ms-4 btn-warning">Book
+                                Now</button>
+                            <button
+                                class="btn btn-sm btn-outline bg-gray-900 mt-4 ms-4 btn-warning">Play
+                                Trailer</button>
+
+                        </div>
+
+                    </div>
+
+                    <div class=" mt-5 flex whitespace-nowrap scrollbar-none overflow-auto">
+
+                        <div class="card bg-orange-950 w-60 shadow-xl me-5">
+                            <figure class="mt-3 ">
+                                <img class="rounded-lg"
+                                    style="width: 180px; height: 180px;"
+                                    src="https://akm-img-a-in.tosshub.com/indiatoday/images/story/202403/venkat-prabhu-shares-pic-from-thalapathy-vijays-goat-poster-prep-image-source-venkat-prabhuin-240803264-1x1.png?VersionId=_E5CxDpf4nIRzHUo_aWmntKfMidr0u3t"
+                                    alt="Shoes" />
+                            </figure>
+                            <div class="card-body">
+                                <h2 class="card-title text-orange-300">The
+                                    Goat</h2>
+                                <p>UA</p><p>Tamil, English, Telugu</p>
+                                <div class="card-actions justify-end">
+                                    <button class="btn btn-warning btn-sm">Watch
+                                        Now</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card bg-orange-950 w-60 shadow-xl me-5">
+                            <figure class="mt-3 ">
+                                <img class="rounded-lg"
+                                    style="width: 180px; height: 180px;"
+                                    src="https://akm-img-a-in.tosshub.com/indiatoday/images/story/202403/venkat-prabhu-shares-pic-from-thalapathy-vijays-goat-poster-prep-image-source-venkat-prabhuin-240803264-1x1.png?VersionId=_E5CxDpf4nIRzHUo_aWmntKfMidr0u3t"
+                                    alt="Shoes" />
+                            </figure>
+                            <div class="card-body">
+                                <h2 class="card-title text-orange-300">The
+                                    Goat</h2>
+                                <p>UA</p><p>Tamil, English, Telugu</p>
+                                <div class="card-actions justify-end">
+                                    <button class="btn btn-warning btn-sm">Watch
+                                        Now</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card bg-orange-950 w-60 shadow-xl me-5">
+                            <figure class="mt-3 ">
+                                <img class="rounded-lg"
+                                    style="width: 180px; height: 180px;"
+                                    src="https://akm-img-a-in.tosshub.com/indiatoday/images/story/202403/venkat-prabhu-shares-pic-from-thalapathy-vijays-goat-poster-prep-image-source-venkat-prabhuin-240803264-1x1.png?VersionId=_E5CxDpf4nIRzHUo_aWmntKfMidr0u3t"
+                                    alt="Shoes" />
+                            </figure>
+                            <div class="card-body">
+                                <h2 class="card-title text-orange-300">The
+                                    Goat</h2>
+                                <p>UA</p><p>Tamil, English, Telugu</p>
+                                <div class="card-actions justify-end">
+                                    <button class="btn btn-warning btn-sm">Watch
+                                        Now</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card bg-orange-950 w-60 shadow-xl me-5">
+                            <figure class="mt-3 ">
+                                <img class="rounded-lg"
+                                    style="width: 180px; height: 180px;"
+                                    src="https://akm-img-a-in.tosshub.com/indiatoday/images/story/202403/venkat-prabhu-shares-pic-from-thalapathy-vijays-goat-poster-prep-image-source-venkat-prabhuin-240803264-1x1.png?VersionId=_E5CxDpf4nIRzHUo_aWmntKfMidr0u3t"
+                                    alt="Shoes" />
+                            </figure>
+                            <div class="card-body">
+                                <h2 class="card-title text-orange-300">The
+                                    Goat</h2>
+                                <p>UA</p><p>Tamil, English, Telugu</p>
+                                <div class="card-actions justify-end">
+                                    <button class="btn btn-warning btn-sm">Watch
+                                        Now</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card bg-orange-950 w-60 shadow-xl me-5">
+                            <figure class="mt-3 ">
+                                <img class="rounded-lg"
+                                    style="width: 180px; height: 180px;"
+                                    src="https://akm-img-a-in.tosshub.com/indiatoday/images/story/202403/venkat-prabhu-shares-pic-from-thalapathy-vijays-goat-poster-prep-image-source-venkat-prabhuin-240803264-1x1.png?VersionId=_E5CxDpf4nIRzHUo_aWmntKfMidr0u3t"
+                                    alt="Shoes" />
+                            </figure>
+                            <div class="card-body">
+                                <h2 class="card-title text-orange-300">The
+                                    Goat</h2>
+                                <p>UA</p><p>Tamil, English, Telugu</p>
+                                <div class="card-actions justify-end">
+                                    <button class="btn btn-warning btn-sm">Watch
+                                        Now</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card bg-orange-950 w-60 shadow-xl me-5">
+                            <figure class="mt-3 ">
+                                <img class="rounded-lg"
+                                    style="width: 180px; height: 180px;"
+                                    src="https://akm-img-a-in.tosshub.com/indiatoday/images/story/202403/venkat-prabhu-shares-pic-from-thalapathy-vijays-goat-poster-prep-image-source-venkat-prabhuin-240803264-1x1.png?VersionId=_E5CxDpf4nIRzHUo_aWmntKfMidr0u3t"
+                                    alt="Shoes" />
+                            </figure>
+                            <div class="card-body">
+                                <h2 class="card-title text-orange-300">The
+                                    Goat</h2>
+                                <p>UA</p><p>Tamil, English, Telugu</p>
+                                <div class="card-actions justify-end">
+                                    <button class="btn btn-warning btn-sm">Watch
+                                        Now</button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </body>
+</html>
